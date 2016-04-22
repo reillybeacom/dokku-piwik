@@ -1,25 +1,21 @@
 {
     "name": "dz0ny/heroku-docker-piwik",
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "piwik",
-                "version": "2.16.0",
-                "type": "project",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://builds.piwik.org/piwik-2.16.0.zip"
-                }
+    "repositories": [{
+        "type": "package",
+        "package": {
+            "name": "piwik",
+            "version": "2.16.0",
+            "type": "project",
+            "dist": {
+                "type": "zip",
+                "url": "https://builds.piwik.org/piwik-2.16.0.zip"
             }
         }
-    ],
-    "authors": [
-        {
-            "name": "Janez Troha",
-            "email": "dz0ny@ubuntu.si"
-        }
-    ],
+    }],
+    "authors": [{
+        "name": "Janez Troha",
+        "email": "dz0ny@ubuntu.si"
+    }],
     "require": {
         "php": "~7.0.3",
         "piwik": "*",
@@ -27,8 +23,9 @@
         "ext-gd": "*",
         "ext-apcu": "*"
     },
-      "require-dev": {
-    "heroku/heroku-buildpack-php": "*"},
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    },
     "scripts": {
         "compile": [
             "cp config.ini.php vendor/piwik/piwik/config/config.ini.php",

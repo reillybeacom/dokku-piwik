@@ -9,7 +9,6 @@ ENV PATH /app/.heroku/php/bin:/app/.heroku/php/sbin:/tmp/php-pack/bin:$PATH
 ENV STACK cedar-14
 ENV DOCKER_BUILD 1
 
-
 RUN mkdir -p /app/.heroku
 RUN mkdir -p /tmp/app
 RUN mkdir -p /app/src

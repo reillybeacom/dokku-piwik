@@ -29,7 +29,7 @@
     "scripts": {
         "compile": [
             "ls -al",
-            "compile.sh"
+            "bash compile.sh"
         ]
     }
 }

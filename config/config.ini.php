@@ -1,12 +1,28 @@
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 ; file automatically generated or modified by Piwik; you can manually override the default values in global.ini.php by redefining them in this file.
 [database]
-
+host = "#DB_HOST"
+username = "#DB_USERNAME"
+password = "#DB_PASSWORD"
+dbname = "#DB_NAME"
+tables_prefix = "piwik_"
 
 [General]
 proxy_client_headers[] = "HTTP_X_FORWARDED_FOR"
+salt = "#SECRET_TOKEN"
 trusted_hosts[] = "piwik.rotterdam.aluxian.com"
+trusted_hosts[] = "analytics.whatsie.chat"
+trusted_hosts[] = "app.whatsie.chat"
 trusted_hosts[] = "whatsie.chat"
+force_ssl = 1
+
+[mail]
+transport = "smtp"
+host = "smtp.postmarkapp.com"
+type = "Login"
+username = "#POSTMARK_TOKEN"
+password = "#POSTMARK_TOKEN"
+encryption = "tls"
 
 [PluginsInstalled]
 PluginsInstalled[] = "Diagnostics"

@@ -1,1 +1,2 @@
-web: /app/entrypoint.sh /app/vendor/heroku/heroku-buildpack-php/bin/heroku-php-nginx -C nginx.conf vendor/piwik/piwik/
+web: /app/vendor/heroku/heroku-buildpack-php/bin/heroku-php-nginx -C config/nginx.conf vendor/piwik/piwik/
+archive: /app/scripts/archive.sh

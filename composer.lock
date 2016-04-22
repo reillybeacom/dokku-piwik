@@ -4,67 +4,107 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "67314e73e9bcc5d836b154bb7e51156e",
-    "content-hash": "064056cf1b4a38b5e6ded2df54bb0d78",
-    "packages": [
-        {
-            "name": "piwik",
-            "version": "2.16.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://builds.piwik.org/piwik-2.16.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "project"
-        }
-    ],
-    "packages-dev": [
-        {
-            "name": "heroku/heroku-buildpack-php",
-            "version": "v101",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "efca12bb59ccdebec79cabddd94e7c1ef51de908"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/efca12bb59ccdebec79cabddd94e7c1ef51de908",
-                "reference": "efca12bb59ccdebec79cabddd94e7c1ef51de908",
-                "shasum": ""
-            },
-            "bin": [
-                "bin/heroku-hhvm-apache2",
-                "bin/heroku-hhvm-nginx",
-                "bin/heroku-php-apache2",
-                "bin/heroku-php-nginx"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "David Zuelke",
-                    "email": "dz@heroku.com"
-                }
-            ],
-            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
-            "homepage": "http://github.com/heroku/heroku-buildpack-php",
-            "keywords": [
-                "apache",
-                "apache2",
-                "foreman",
-                "heroku",
-                "hhvm",
-                "nginx",
-                "php"
-            ],
-            "time": "2016-04-12 02:41:29"
-        }
-    ],
+    "hash": "dcf4603e3cfbfcde5d92e68467233c59",
+    "content-hash": "1c4762ca73dd57ecaf484c6d4f0cce5e",
+    "packages": [{
+        "name": "geoip/geoip",
+        "version": "v1.16",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/maxmind/geoip-api-php.git",
+            "reference": "74462459a6281125408afb1ef63e3fcaa2cccd3d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/maxmind/geoip-api-php/zipball/74462459a6281125408afb1ef63e3fcaa2cccd3d",
+            "reference": "74462459a6281125408afb1ef63e3fcaa2cccd3d",
+            "shasum": ""
+        },
+        "conflict": {
+            "ext-geoip": "*"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*",
+            "satooshi/php-coveralls": "1.0.*"
+        },
+        "type": "library",
+        "autoload": {
+            "files": [
+                "src/geoip.inc",
+                "src/geoipcity.inc",
+                "src/timezone.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL 2.1+"
+        ],
+        "authors": [{
+            "name": "MaxMind, Inc.",
+            "email": "support@maxmind.com",
+            "homepage": "http://www.maxmind.com/"
+        }],
+        "description": "MaxMind GeoIP PHP API",
+        "homepage": "http://dev.maxmind.com/geoip/legacy/downloadable",
+        "keywords": [
+            "geoip",
+            "geolocation",
+            "maxmind"
+        ],
+        "time": "2016-01-29 17:19:46"
+    }, {
+        "name": "piwik",
+        "version": "2.16.1",
+        "dist": {
+            "type": "zip",
+            "url": "https://builds.piwik.org/piwik-2.16.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "type": "project"
+    }],
+    "packages-dev": [{
+        "name": "heroku/heroku-buildpack-php",
+        "version": "v101",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/heroku/heroku-buildpack-php.git",
+            "reference": "efca12bb59ccdebec79cabddd94e7c1ef51de908"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/efca12bb59ccdebec79cabddd94e7c1ef51de908",
+            "reference": "efca12bb59ccdebec79cabddd94e7c1ef51de908",
+            "shasum": ""
+        },
+        "bin": [
+            "bin/heroku-hhvm-apache2",
+            "bin/heroku-hhvm-nginx",
+            "bin/heroku-php-apache2",
+            "bin/heroku-php-nginx"
+        ],
+        "type": "library",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [{
+            "name": "David Zuelke",
+            "email": "dz@heroku.com"
+        }],
+        "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
+        "homepage": "http://github.com/heroku/heroku-buildpack-php",
+        "keywords": [
+            "apache",
+            "apache2",
+            "foreman",
+            "heroku",
+            "hhvm",
+            "nginx",
+            "php"
+        ],
+        "time": "2016-04-12 02:41:29"
+    }],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

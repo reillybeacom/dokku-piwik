@@ -17,7 +17,7 @@
         "email": "dz0ny@ubuntu.si"
     }],
     "require": {
-        "php": "~7.0.3",
+        "php": "*",
         "piwik": "*",
         "ext-mbstring": "*",
         "ext-gd": "*",
@@ -28,7 +28,7 @@
     },
     "scripts": {
         "compile": [
-            "bash compile.sh"
+
         ]
     }
 }

@@ -28,6 +28,7 @@
     },
     "scripts": {
         "compile": [
+            "ls -al",
             "compile.sh"
         ]
     }

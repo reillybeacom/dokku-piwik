@@ -5,13 +5,13 @@ host = "#DB_HOST"
 username = "#DB_USERNAME"
 password = "#DB_PASSWORD"
 dbname = "#DB_NAME"
-tables_prefix = "#DB_PREFIX"
+tables_prefix = "pw_"
 port = #DB_PORT
 charset = "utf8"
 
 [General]
 salt = "#SECRET_TOKEN"
-session_save_handler = dbtable
+session_save_handler = "dbtable"
 
 [PluginsInstalled]
 PluginsInstalled[] = "Diagnostics"

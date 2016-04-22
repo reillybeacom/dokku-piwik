@@ -28,18 +28,7 @@
     },
     "scripts": {
         "compile": [
-            "cp config.ini.php vendor/piwik/piwik/config/config.ini.php",
-            "sed -i s/#DB_HOST/$DB_HOST/ vendor/piwik/piwik/config/config.ini.php",
-            "sed -i s/#DB_USERNAME/$DB_USERNAME/ vendor/piwik/piwik/config/config.ini.php",
-            "sed -i s/#DB_PASSWORD/$DB_PASSWORD/ vendor/piwik/piwik/config/config.ini.php",
-            "sed -i s/#DB_NAME/$DB_NAME/ vendor/piwik/piwik/config/config.ini.php",
-            "sed -i s/#DB_PORT/$DB_PORT/ vendor/piwik/piwik/config/config.ini.php",
-            "sed -i s/#DB_PREFIX/$DB_PREFIX/ vendor/piwik/piwik/config/config.ini.php",
-            "sed -i s/#SECRET_TOKEN/$SECRET_TOKEN/ vendor/piwik/piwik/config/config.ini.php",
-            "echo vendor/piwik/piwik/config/config.ini.php",
-            "curl http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz > vendor/piwik/piwik/misc/GeoLiteCity.dat.gz",
-            "gunzip vendor/piwik/piwik/misc/GeoLiteCity.dat.gz",
-            "mv vendor/piwik/piwik/misc/GeoLiteCity.dat vendor/piwik/piwik/misc/GeoIPCity.dat"
+            "compile.sh"
         ]
     }
 }

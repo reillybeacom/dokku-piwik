@@ -8,12 +8,14 @@ dbname = "#DB_NAME"
 tables_prefix = "piwik_"
 
 [General]
-proxy_client_headers[] = "HTTP_X_FORWARDED_FOR"
 salt = "#SECRET_TOKEN"
+proxy_client_headers[] = "HTTP_X_FORWARDED_FOR"
 trusted_hosts[] = "piwik.rotterdam.aluxian.com"
 trusted_hosts[] = "analytics.whatsie.chat"
 trusted_hosts[] = "app.whatsie.chat"
 trusted_hosts[] = "whatsie.chat"
+session_save_handler = "dbtable"
+noreply_email_address = "piwik@aluxian.com"
 force_ssl = 1
 
 [mail]

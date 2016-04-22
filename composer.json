@@ -28,7 +28,7 @@
     },
     "scripts": {
         "compile": [
-
+            "echo na"
         ]
     }
 }

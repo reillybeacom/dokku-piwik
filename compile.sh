@@ -21,3 +21,7 @@ sed -i s/#SECRET_TOKEN/$SECRET_TOKEN/ vendor/piwik/piwik/config/config.ini.php
 curl http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz > vendor/piwik/piwik/misc/GeoLiteCity.dat.gz
 gunzip vendor/piwik/piwik/misc/GeoLiteCity.dat.gz
 mv vendor/piwik/piwik/misc/GeoLiteCity.dat vendor/piwik/piwik/misc/GeoIPCity.dat
+
+# Temp fix
+mkdir -p /app/vendor/piwik/piwik/tmp/sessions
+chmod -R 0755 /app/vendor/piwik/piwik/tmp/sessions

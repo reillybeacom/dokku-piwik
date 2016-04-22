@@ -11,6 +11,28 @@
                 "url": "https://builds.piwik.org/piwik-2.16.1.zip"
             }
         }
+    }, {
+        "type": "package",
+        "package": {
+            "name": "piwik-customdimensions",
+            "version": "0.1.4",
+            "type": "project",
+            "dist": {
+                "type": "zip",
+                "url": "https://plugins.piwik.org/api/2.0/plugins/CustomDimensions/download/0.1.4"
+            }
+        }
+    }, {
+        "type": "package",
+        "package": {
+            "name": "piwik-platformsreport",
+            "version": "0.1.4",
+            "type": "project",
+            "dist": {
+                "type": "zip",
+                "url": "https://plugins.piwik.org/api/2.0/plugins/PlatformsReport/download/1.0.4"
+            }
+        }
     }],
     "authors": [{
         "name": "Janez Troha",
@@ -19,6 +41,8 @@
     "require": {
         "php": "*",
         "piwik": "*",
+        "piwik-customdimensions": "*",
+        "piwik-platformsreport": "*",
         "ext-mbstring": "*",
         "ext-gd": "*",
         "ext-apcu": "*",

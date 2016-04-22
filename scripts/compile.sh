@@ -21,3 +21,7 @@ sed -i s/#POSTMARK_TOKEN/$POSTMARK_TOKEN/ vendor/piwik/piwik/config/config.ini.p
 curl -sS http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz > vendor/piwik/piwik/misc/GeoLiteCity.dat.gz
 gunzip vendor/piwik/piwik/misc/GeoLiteCity.dat.gz
 mv vendor/piwik/piwik/misc/GeoLiteCity.dat vendor/piwik/piwik/misc/GeoIPCity.dat
+
+# Install plugins
+cp -r vendor/piwik-customdimensions vendor/piwik/piwik/plugins/CustomDimensions
+cp -r vendor/piwik-platformsreport vendor/piwik/piwik/plugins/PlatformsReport

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9d1b50b41dee45012239081977f59476",
-    "content-hash": "22cc99519fccb6e6a0b0263913a3caea",
+    "hash": "9e9d3439c257131923dd0f7c329e3853",
+    "content-hash": "0c6e8134fe1574f00f6632a649c79dc5",
     "packages": [{
         "name": "geoip/geoip",
         "version": "v1.16",
@@ -74,7 +74,7 @@
         "type": "project"
     }, {
         "name": "piwik-platforms-report",
-        "version": "0.1.4",
+        "version": "1.0.4",
         "dist": {
             "type": "zip",
             "url": "https://plugins.piwik.org/api/2.0/plugins/PlatformsReport/download/1.0.4",

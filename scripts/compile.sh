@@ -16,6 +16,7 @@ sed -i s/#DB_NAME/$DB_NAME/ vendor/piwik/piwik/config/config.ini.php
 
 sed -i s/#SECRET_TOKEN/$SECRET_TOKEN/ vendor/piwik/piwik/config/config.ini.php
 sed -i s/#POSTMARK_TOKEN/$POSTMARK_TOKEN/ vendor/piwik/piwik/config/config.ini.php
+sed -i s/#NOREPLY_EMAIL/$NOREPLY_EMAIL/ vendor/piwik/piwik/config/config.ini.php
 
 # Download maxmind db
 curl -sS http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz > vendor/piwik/piwik/misc/GeoLiteCity.dat.gz

@@ -4,138 +4,127 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b73be9367e34135b857788b162b2c3e5",
-    "content-hash": "c0dc36fd631e5ea5a8b8dc135a31a41d",
-    "packages": [
-        {
-            "name": "geoip/geoip",
-            "version": "v1.16",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maxmind/geoip-api-php.git",
-                "reference": "74462459a6281125408afb1ef63e3fcaa2cccd3d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/geoip-api-php/zipball/74462459a6281125408afb1ef63e3fcaa2cccd3d",
-                "reference": "74462459a6281125408afb1ef63e3fcaa2cccd3d",
-                "shasum": ""
-            },
-            "conflict": {
-                "ext-geoip": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*",
-                "satooshi/php-coveralls": "1.0.*"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/geoip.inc",
-                    "src/geoipcity.inc",
-                    "src/timezone.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL 2.1+"
-            ],
-            "authors": [
-                {
-                    "name": "MaxMind, Inc.",
-                    "email": "support@maxmind.com",
-                    "homepage": "http://www.maxmind.com/"
-                }
-            ],
-            "description": "MaxMind GeoIP PHP API",
-            "homepage": "http://dev.maxmind.com/geoip/legacy/downloadable",
-            "keywords": [
-                "geoip",
-                "geolocation",
-                "maxmind"
-            ],
-            "time": "2016-01-29 17:19:46"
+    "hash": "9d1b50b41dee45012239081977f59476",
+    "content-hash": "22cc99519fccb6e6a0b0263913a3caea",
+    "packages": [{
+        "name": "geoip/geoip",
+        "version": "v1.16",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/maxmind/geoip-api-php.git",
+            "reference": "74462459a6281125408afb1ef63e3fcaa2cccd3d"
         },
-        {
-            "name": "piwik",
-            "version": "2.16.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://builds.piwik.org/piwik-2.16.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "project"
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/maxmind/geoip-api-php/zipball/74462459a6281125408afb1ef63e3fcaa2cccd3d",
+            "reference": "74462459a6281125408afb1ef63e3fcaa2cccd3d",
+            "shasum": ""
         },
-        {
-            "name": "piwik-customdimensions",
-            "version": "0.1.4",
-            "dist": {
-                "type": "zip",
-                "url": "https://plugins.piwik.org/api/2.0/plugins/CustomDimensions/download/0.1.4",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "project"
+        "conflict": {
+            "ext-geoip": "*"
         },
-        {
-            "name": "piwik-platformsreport",
-            "version": "0.1.4",
-            "dist": {
-                "type": "zip",
-                "url": "https://plugins.piwik.org/api/2.0/plugins/PlatformsReport/download/1.0.4",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "project"
-        }
-    ],
-    "packages-dev": [
-        {
-            "name": "heroku/heroku-buildpack-php",
-            "version": "v101",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "efca12bb59ccdebec79cabddd94e7c1ef51de908"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/efca12bb59ccdebec79cabddd94e7c1ef51de908",
-                "reference": "efca12bb59ccdebec79cabddd94e7c1ef51de908",
-                "shasum": ""
-            },
-            "bin": [
-                "bin/heroku-hhvm-apache2",
-                "bin/heroku-hhvm-nginx",
-                "bin/heroku-php-apache2",
-                "bin/heroku-php-nginx"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "David Zuelke",
-                    "email": "dz@heroku.com"
-                }
-            ],
-            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
-            "homepage": "http://github.com/heroku/heroku-buildpack-php",
-            "keywords": [
-                "apache",
-                "apache2",
-                "foreman",
-                "heroku",
-                "hhvm",
-                "nginx",
-                "php"
-            ],
-            "time": "2016-04-12 02:41:29"
-        }
-    ],
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*",
+            "satooshi/php-coveralls": "1.0.*"
+        },
+        "type": "library",
+        "autoload": {
+            "files": [
+                "src/geoip.inc",
+                "src/geoipcity.inc",
+                "src/timezone.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL 2.1+"
+        ],
+        "authors": [{
+            "name": "MaxMind, Inc.",
+            "email": "support@maxmind.com",
+            "homepage": "http://www.maxmind.com/"
+        }],
+        "description": "MaxMind GeoIP PHP API",
+        "homepage": "http://dev.maxmind.com/geoip/legacy/downloadable",
+        "keywords": [
+            "geoip",
+            "geolocation",
+            "maxmind"
+        ],
+        "time": "2016-01-29 17:19:46"
+    }, {
+        "name": "piwik",
+        "version": "2.16.1",
+        "dist": {
+            "type": "zip",
+            "url": "https://builds.piwik.org/piwik-2.16.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "type": "project"
+    }, {
+        "name": "piwik-custom-dimensions",
+        "version": "0.1.4",
+        "dist": {
+            "type": "zip",
+            "url": "https://plugins.piwik.org/api/2.0/plugins/CustomDimensions/download/0.1.4",
+            "reference": null,
+            "shasum": null
+        },
+        "type": "project"
+    }, {
+        "name": "piwik-platforms-report",
+        "version": "0.1.4",
+        "dist": {
+            "type": "zip",
+            "url": "https://plugins.piwik.org/api/2.0/plugins/PlatformsReport/download/1.0.4",
+            "reference": null,
+            "shasum": null
+        },
+        "type": "project"
+    }],
+    "packages-dev": [{
+        "name": "heroku/heroku-buildpack-php",
+        "version": "v101",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/heroku/heroku-buildpack-php.git",
+            "reference": "efca12bb59ccdebec79cabddd94e7c1ef51de908"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/efca12bb59ccdebec79cabddd94e7c1ef51de908",
+            "reference": "efca12bb59ccdebec79cabddd94e7c1ef51de908",
+            "shasum": ""
+        },
+        "bin": [
+            "bin/heroku-hhvm-apache2",
+            "bin/heroku-hhvm-nginx",
+            "bin/heroku-php-apache2",
+            "bin/heroku-php-nginx"
+        ],
+        "type": "library",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [{
+            "name": "David Zuelke",
+            "email": "dz@heroku.com"
+        }],
+        "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
+        "homepage": "http://github.com/heroku/heroku-buildpack-php",
+        "keywords": [
+            "apache",
+            "apache2",
+            "foreman",
+            "heroku",
+            "hhvm",
+            "nginx",
+            "php"
+        ],
+        "time": "2016-04-12 02:41:29"
+    }],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

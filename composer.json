@@ -1,5 +1,5 @@
 {
-    "name": "dz0ny/heroku-docker-piwik",
+    "name": "Aluxian/dokku-piwik",
     "repositories": [{
         "type": "package",
         "package": {
@@ -14,7 +14,7 @@
     }, {
         "type": "package",
         "package": {
-            "name": "piwik-customdimensions",
+            "name": "piwik-custom-dimensions",
             "version": "0.1.4",
             "type": "project",
             "dist": {
@@ -25,7 +25,7 @@
     }, {
         "type": "package",
         "package": {
-            "name": "piwik-platformsreport",
+            "name": "piwik-platforms-report",
             "version": "0.1.4",
             "type": "project",
             "dist": {
@@ -37,12 +37,15 @@
     "authors": [{
         "name": "Janez Troha",
         "email": "dz0ny@ubuntu.si"
+    }, {
+        "name": "Alexandru Rosianu",
+        "email": "me@aluxian.com"
     }],
     "require": {
         "php": "*",
         "piwik": "*",
-        "piwik-customdimensions": "*",
-        "piwik-platformsreport": "*",
+        "piwik-custom-dimensions": "*",
+        "piwik-platforms-report": "*",
         "ext-mbstring": "*",
         "ext-gd": "*",
         "ext-apcu": "*",

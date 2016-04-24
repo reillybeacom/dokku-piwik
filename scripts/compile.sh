@@ -24,5 +24,5 @@ gunzip vendor/piwik/piwik/misc/GeoLiteCity.dat.gz
 mv vendor/piwik/piwik/misc/GeoLiteCity.dat vendor/piwik/piwik/misc/GeoIPCity.dat
 
 # Install plugins
-cp -r vendor/piwik-customdimensions vendor/piwik/piwik/plugins/CustomDimensions
-cp -r vendor/piwik-platformsreport vendor/piwik/piwik/plugins/PlatformsReport
+cp -r vendor/piwik-custom-dimensions vendor/piwik/piwik/plugins/CustomDimensions
+cp -r vendor/piwik-platforms-report vendor/piwik/piwik/plugins/PlatformsReport

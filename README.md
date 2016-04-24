@@ -15,23 +15,20 @@ Note that some plugins are disabled by default.
 Install mariadb and create the app and its db:
 
 ```
+dokku apps:create piwik
 dokku plugin:install https://github.com/dokku/dokku-mariadb.git mariadb
 dokku mariadb:create piwik
-dokku apps:create piwik
+dokku mariadb:link piwik piwik
 ```
 
-Now push piwik, then link the two:
+Now push piwik:
 
 ```
-# localhost:
 git clone git@github.com:Aluxian/dokku-piwik.git
 cd dokku-piwik
 vim config.ini.php # edit settings
 git remote add dokku dokku@yourserver.me:piwik
 git push dokku master
-
-# on dokku:
-dokku mariadb:link piwik piwik # not sure if this can be done earlier; restart the app if needed
 ```
 
 ## Config

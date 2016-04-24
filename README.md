@@ -51,7 +51,7 @@ These env vars are available:
 
 If your setup doesn't work, it's probably because of `force_ssl = 1` in config.
 
-## How about plugins?
+## Plugins
 
 You can use composer to install additional plugins. See https://github.com/composer/installers and the examples in `composer.json`.
 

@@ -9,14 +9,11 @@ tables_prefix = "piwik_"
 
 [General]
 session_save_handler = "dbtable"
-force_ssl = 1
+force_ssl = #FORCE_SSL
 noreply_email_address = "#NOREPLY_EMAIL"
 salt = "#SECRET_TOKEN"
 proxy_client_headers[] = "HTTP_X_FORWARDED_FOR"
-trusted_hosts[] = "piwik.rotterdam.aluxian.com"
-trusted_hosts[] = "analytics.whatsie.chat"
-trusted_hosts[] = "app.whatsie.chat"
-trusted_hosts[] = "whatsie.chat"
+#TRUSTED_HOSTS
 
 [mail]
 transport = "smtp"

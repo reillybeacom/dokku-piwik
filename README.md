@@ -26,7 +26,7 @@ Now push piwik:
 ```
 git clone git@github.com:Aluxian/dokku-piwik.git
 cd dokku-piwik
-vim config.ini.php # edit settings
+vim config.ini.php # edit settings if needed
 git remote add dokku dokku@yourserver.me:piwik
 git push dokku master
 ```
@@ -43,16 +43,15 @@ The config files have been customised to my needs, make sure you edit it before 
 
 These env vars are available:
 
-- DB_HOST
-- DB_USERNAME
-- DB_PASSWORD
-- DB_NAME
-- NOREPLY_EMAIL
-- SECRET_TOKEN
-- POSTMARK_TOKEN
-- POSTMARK_TOKEN
-
-If your setup doesn't work, it's probably because of `force_ssl = 1` in config.
+- **DB_HOST:** your database's host
+- **DB_USERNAME:** your database's username
+- **DB_PASSWORD:** your database's password
+- **DB_NAME:** your database's name
+- **NOREPLY_EMAIL:** used by piwik to send emails (using postmark)
+- **SECRET_TOKEN:** secret secret
+- **POSTMARK_TOKEN:** used as an stmp provider for emails
+- **TRUSTED_HOST_X:** where `X` can be anything; for example, you can set `TRUSTED_HOST_1=app.com` and `TRUSTED_HOST_2=my.app.com`
+- **FORCE_SSL:** this is either `1` or `0` (default)
 
 ## Archiving
 

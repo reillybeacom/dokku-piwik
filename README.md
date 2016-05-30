@@ -12,30 +12,11 @@ Note that some plugins are disabled by default.
 
 ## Deploy
 
-Install mariadb and create the app and its db:
-
-```
-dokku apps:create piwik
-dokku plugin:install https://github.com/dokku/dokku-mariadb.git mariadb
-dokku mariadb:create piwik
-dokku mariadb:link piwik piwik
-```
-
-Now push piwik:
-
-```
-git clone git@github.com:Aluxian/dokku-piwik.git
-cd dokku-piwik
-vim config.ini.php # edit settings if needed
-git remote add dokku dokku@yourserver.me:piwik
-git push dokku master
-```
-
-Start the archiver process, too (this step is only needed once):
-
-```
-dokku ps:scale piwik archive=1
-```
+1. Create a Heroku app and add MySQL database to it
+1. Connect directly to your MySQL database and upload the existing schema `piwik.schema.sql` (the PIWIK wizard will not be able to do this for you on Heroku)
+1. Set the Heroku config vars as below
+1. Push code to heroku
+1. You can log-in for the first time with `user`, `bitnami`. Change this password!
 
 ## Config
 
@@ -47,11 +28,8 @@ These env vars are available:
 - **DB_USERNAME:** your database's username
 - **DB_PASSWORD:** your database's password
 - **DB_NAME:** your database's name
-- **NOREPLY_EMAIL:** used by piwik to send emails (using postmark)
 - **SECRET_TOKEN:** secret secret
-- **POSTMARK_TOKEN:** used as an stmp provider for emails
-- **TRUSTED_HOST_X:** where `X` can be anything; for example, you can set `TRUSTED_HOST_1=app.com` and `TRUSTED_HOST_2=my.app.com`
-- **FORCE_SSL:** this is either `1` or `0` (default)
+- **LOGO_URL:** A URL to a logo to replace the PIWIK header logo.
 
 ## Archiving
 
@@ -60,6 +38,10 @@ The Procfile includes a process responsible for running the `core:archive` task.
 ## Plugins
 
 You can use composer to install additional plugins. See https://github.com/composer/installers and the examples in `composer.json`.
+
+## Notes
+
+https://github.com/perusio/piwik-nginx/blob/master/apps/piwik/piwik.conf
 
 ## License
 

@@ -9,19 +9,8 @@ tables_prefix = "piwik_"
 
 [General]
 session_save_handler = "dbtable"
-force_ssl = #FORCE_SSL
-noreply_email_address = "#NOREPLY_EMAIL"
+force_ssl = 1
 salt = "#SECRET_TOKEN"
-proxy_client_headers[] = "HTTP_X_FORWARDED_FOR"
-#TRUSTED_HOSTS
-
-[mail]
-transport = "smtp"
-host = "smtp.postmarkapp.com"
-type = "Login"
-username = "#POSTMARK_TOKEN"
-password = "#POSTMARK_TOKEN"
-encryption = "tls"
 
 [Plugins]
 Plugins[] = "CorePluginsAdmin"
